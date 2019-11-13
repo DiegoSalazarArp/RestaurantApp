@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  Register.swift
 //  RestaurantApp
 //
 //  Created by Diego Salazar Arp on 12-11-19.
@@ -8,14 +8,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Register: View {
+    
+    var url = ""
+    var name = ""
     var body: some View {
-        Text("Hello, World!")
+
+        WebView(url: url).navigationBarTitle(name)
+
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Register_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Register()
     }
 }
